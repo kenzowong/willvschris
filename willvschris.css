@@ -1,0 +1,71 @@
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro img:hover {
+  border: 3px solid red;
+  cursor: pointer;
+}
+
+#intro img::selection {
+  border: 2px solid green;
+}
+
+#bigwrapper {
+  display: none;
+  flex-direction: column;
+}
+
+.container {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.die {
+  display: flex;
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  justify-content: center;
+  align-items: center;
+}
+
+#resulttext,
+.rollthatshit,
+p,
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.rollthatshit {
+  cursor: pointer;
+}
+
+img {
+  display: flex;
+  margin: 15px;
+  width: 200px;
+  justify-content: center;
+  align-self: center;
+}
+
+@media (max-width: 400px) {
+  img {
+    width: 150px;
+  }
+  .die {
+    width: 40px;
+    height: 40px;
+  }
+}
